@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Permissão
-        run: chmod +x Servidor/Minecraft/run_crafty.sh
+        run: Servidor/Minecraft/run_crafty.sh
 
       - name: Executar script
         run: Servidor/Minecraft/run_crafty.sh
