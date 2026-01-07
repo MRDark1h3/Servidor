@@ -1,0 +1,16 @@
+name: Run Crafty Script
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Permissão
+        run: chmod +x Servidor/Minecraft/run_crafty.sh
+
+      - name: Executar script
+        run: Servidor/Minecraft/run_crafty.sh
